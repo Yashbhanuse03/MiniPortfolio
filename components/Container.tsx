@@ -4,7 +4,7 @@ import {cn} from "@/lib/utils";
 
 const Container = ({ children, ClassName, }: { children: React.ReactNode, ClassName?: string; }) => {
   return (
-    <div className={cn("max-w-5xl  mx-auto min-h-screen shadow-xl shadow-red-950 bg-white ", ClassName)}>
+    <div className={cn("max-w-5xl  mx-auto min-h-screen drop-shadow-2xl bg-white ", ClassName)}>
       {children}
     </div>
   )

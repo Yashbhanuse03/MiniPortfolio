@@ -5,16 +5,16 @@ import Link from 'next/link'
 import { useState  } from 'react'
 import { useScroll , motion } from 'motion/react';
 import Image from 'next/image'
-import { nav } from 'motion/react-client'
-
+import { hr, nav } from 'motion/react-client'
+import { title } from 'process'
 
 
 const NavBar = () => {
   const navItems = [
-        {name: 'About', link: '/about'},
-        {name: 'Projects', link: '/projects'},
-        {name: 'Contact', link: '/contact'},
-        {name: 'Blog', link: '/blog'},
+        {title: 'About', href: '/about'},
+        {title: 'Projects', href: '/projects'},
+        {title: 'ContactMe', href: '/contactme'},
+        {title: 'Blog', href: '/blog'},
     ];
     const [hovered, setHovered] = useState<number | null>(null);
     const {scrollY} = useScroll();
@@ -31,9 +31,9 @@ const NavBar = () => {
            
           </div>
             <div className='flex space-x-4 font-semibold'>
-              {navItems.map((item, idx)=>(
-                <Link href={item.link} key={idx}>
-                  {item.name}
+              {navItems.map((item, idx) => (
+                <Link href={item.href} key={idx} className="hover:underline">
+                  {item.title}
                 </Link>
               ))}
             </div>

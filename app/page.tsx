@@ -37,16 +37,17 @@ export default function Home() {
     <div>
       <Container>
         <NavBar />
-        <div className="border-b-2 pb-16 border-gray-300 ">
-          <h2 className="text-5xl font-bold pt-30 pb-5 tracking-tight font-[Arial] pl-10">John MacTavish
+        <div className="border-b-2 pb-16 border-gray-300">
+          <h2 className="text-5xl font-bold pt-30 pb-5 tracking-tight text-primary drop-shadow-lg pl-10">John MacTavish
           </h2>
-          <p className="pl-10 text-lg tracking-tight text-gray-500">
+          <p className="pl-10 text-lg tracking-tight text-gray-500 drop-shadow-lg">
             I&apos;m a software engineer with an eye for design. I&apos;ve been
             building things for the web for the past 5 months.<br/> I&apos;ve worked 
             with a variety of technologies, but my main focus is on React and
             Next.js.
           </p>
         </div>
+        
         
 
        
@@ -61,6 +62,7 @@ export default function Home() {
             people.
           </p>
         </div>
+        
 
 
         
@@ -84,9 +86,19 @@ export default function Home() {
             imgSrc="https://mir-s3-cdn-cf.behance.net/projects/404/082b74215554537.Y3JvcCwxMDA2LDc4NywxOTYsMA.png"
             link="#"
           />
+        
+          
 
         </div>
         </div>
+        <div className="border-b-2 pb-16 border-gray-300">
+        <h1 className="text-3xl tracking-tight font-bold pt-10 pl-10">Contributions</h1>
+        <div className="pl-14 pt-10 inline-block">
+          <GitHubCalendar data={contributionData} />
+        </div>
+        </div>
+
+
         <div className=" border-b-2 pb-16 pt-10 pl-8  border-gray-300">
           <p className="tracking-tight max-auto border px-3 inline-flex py-1 text-sm font-semibold mr-2 mb-2">Sharing knowledge as I learn </p>
          
@@ -100,18 +112,15 @@ export default function Home() {
           <p className=" text-gray-500 tracking-tight">I started learning HTML and CSS in 2022. I have been <br/>using it ever since. I have used it in all my projects.</p>
         </div>
 
-
-
         <div className="pl-5 pr-5">
         <Testimonials />
         </div>
         <ContackMe />
-        <div className="">
-          <GitHubCalendar data={contributionData} />
-        </div>
+        
 
         <Footer />
       </Container>
+      
     </div>
   );
 }
