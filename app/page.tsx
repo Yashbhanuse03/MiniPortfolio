@@ -29,6 +29,18 @@ const contributionData = [
   { date: "2024-12-10", count: 0 },
   { date: "2024-12-15", count: 4 },
   { date: "2024-12-20", count: 2 },
+  { date: "2025-01-01", count: 5 }, // This are fake data
+  { date: "2025-01-05", count: 1 },
+  { date: "2025-01-10", count: 3 },
+  { date: "2025-01-15", count: 4 },
+  { date: "2025-01-20", count: 0 },
+  { date: "2025-01-25", count: 2 },
+  { date: "2025-02-01", count: 3 },
+  { date: "2025-02-05", count: 1 },
+  { date: "2025-02-10", count: 0 },
+  { date: "2025-02-15", count: 4 },
+  { date: "2025-02-20", count: 2 },
+  { date: "2025-03-01", count: 5 },
 ];
 
 
@@ -37,8 +49,8 @@ export default function Home() {
     <div>
       <Container>
         <NavBar />
-        <div className="border-b-2 pb-16 border-gray-300">
-          <h2 className="text-5xl font-bold pt-30 pb-5 tracking-tight text-primary drop-shadow-lg pl-10">John MacTavish
+        <div className="border-shadow-lg pb-16 ">
+          <h2 className="text-5xl font-bold pt-10 pb-5 tracking-tight text-primary drop-shadow-lg pl-10">John MacTavish
           </h2>
           <p className="pl-10 text-lg tracking-tight text-gray-500 drop-shadow-lg">
             I&apos;m a software engineer with an eye for design. I&apos;ve been
@@ -47,17 +59,14 @@ export default function Home() {
             Next.js.
           </p>
         </div>
-        
-        
-
        
-        <div className="border-2">
+        <div className="border">
 
-        <div className="pb-1.5 border-gray-300">
-          <h2 className="text-3xl tracking-tight font-bold pt-10 pl-10">Projects</h2>
+        <div className="pb-2 border-gray-300">
+          <h2 className="text-3xl tracking-tight font-bold drop-shadow-lg pt-10 pl-10">Projects</h2>
         </div>
-        <div className="pl-10 ">
-          <p className=" tracking-tight max-auto border px-3 inline-flex py-1 text-sm font-semibold mr-2 mb-2">
+        <div className="pl-10 drop-shadow-lg">
+          <p className=" text-gray-500 max-auto border px-3 inline-flex rounded-lg py-1 drop-shadow-lg text-sm  mr-2 mb-2">
             I love building web apps and products that can impact millions of
             people.
           </p>
@@ -91,9 +100,9 @@ export default function Home() {
 
         </div>
         </div>
-        <div className="border-b-2 pb-16 border-gray-300">
-        <h1 className="text-3xl tracking-tight font-bold pt-10 pl-10">Contributions</h1>
-        <div className="pl-14 pt-10 inline-block">
+        <div className="border-b-2 pb-1 border-gray-300">
+        <p className="text-2xl tracking-tight font-bold pt-10 pl-10">Contributions</p>
+        <div className="pl- inline-block">
           <GitHubCalendar data={contributionData} />
         </div>
         </div>
@@ -115,7 +124,17 @@ export default function Home() {
         <div className="pl-5 pr-5">
         <Testimonials />
         </div>
-        <ContackMe />
+        <div className="border-b-2 pb-16 pt-10 pl-8 border-gray-300">
+          <div className="text-gray-500 max-w-lg pl-2 pr-2 rounded-lg drop-shadow-lg text-sm md:text-base inline-flex border-2">
+            <p className="drop-shadow-lg  ">Get in touch</p>
+          </div>
+          <p className="pt-3 text-gray-500 drop-shadow-lg ">I&apos;m currently looking for new opportunities, My inbox is always open.<br/> Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!</p>
+          <div className="pr-60 drop-shadow-lg">
+          <input type="text" placeholder="Your Email" className="border-2 drop-shawdow-lg rounded-lg w-full h-12 p-2 mt-5" />
+          <button className="border-2 rounded-lg  text-gray-500 h-10 p-2 mt-5">Send Message</button>
+          </div>
+        
+        </div>
         
 
         <Footer />

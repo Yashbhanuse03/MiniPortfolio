@@ -20,7 +20,7 @@ const NavBar = () => {
     const {scrollY} = useScroll();
 
       return (
-        <div className='fixed top-3 gap-3 h-15 w-full flex max-w-4xl inset-x-0 mx-auto backdrop-blur-md items-center justify-center rounded-full border z-30 '>
+        <div className='sticky top-3 gap-3 h-15 w-full flex max-w-4xl inset-x-0 mx-auto backdrop-blur-md items-center justify-center rounded-full border z-30 '>
           <div className='flex justify-between gap-4 items-center'>
             <div className=''>
           </div>

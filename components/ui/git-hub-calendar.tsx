@@ -81,7 +81,7 @@ const GitHubCalendar = ({ data, colors = ["#ebedf0", "#9be9a8", "#40c463", "#30a
   const dayLabels = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   return (
-    <div className="p-4 border rounded-lg">
+    <div className="p-4 border-transparent rounded-lg">
       <div className="flex">
         <div className="flex flex-col justify-between mt-5.5 mr-2">
           {dayLabels.map((day, index) => (

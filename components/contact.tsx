@@ -1,5 +1,8 @@
 "use client";
+import { Container } from "lucide-react";
 import React, { useState } from "react";
+
+
 
 const ContactMe = () => {
   const [formData, setFormData] = useState({
@@ -19,10 +22,11 @@ const ContactMe = () => {
   };
 
   return (
+    
     <section className="bg-gray-100 py-12 px-6 md:px-12">
       <div className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-6">Contact Me</h2>
-        <p className="text-gray-600 mb-6">
+        <p className="text-gray-600 mb-6  max-w-lg pt-4 text-sm md:text-base">
           I’m open to freelancing offers. Reach out to inquire more about my work.
         </p>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -71,6 +75,7 @@ const ContactMe = () => {
         </form>
       </div>
     </section>
+    
   );
 };
 

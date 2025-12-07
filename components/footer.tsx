@@ -5,8 +5,8 @@ import { Github, Linkedin, Mail } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <div className='flex p-2 shadow-lg bg-white items-center justify-between border'>
-        <p className='tracking-tight text-gray-500 pl-2'>Built with love by Yash Bhanuse</p>
+    <div className='flex p-2 drop-shadow-lg bg-white items-center justify-between'>
+        <p className='tracking-tight text-gray-500 text-xs pl-2'>Built with love by Yash Bhanuse</p>
         {/* changed: make icons container a horizontal flex row with gap */}
         <div className='flex items-center gap-4 pr-2'>
           <Link
